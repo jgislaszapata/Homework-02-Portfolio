@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: #b2c2bf ;
+    background-color: #bbab9b;
 }
 
 .header-name {
@@ -12,12 +12,12 @@ body {
 
 header {
     display: flex;
-    background-color: #3b3a30;
+    background-color: #7a3b2e;
     color: #eaece5;
 }
 
 h1 {
-    font-size: 4em;
+    font-size: 5em;
     padding: 20px 20px 14px 20px;
 }
 
@@ -34,19 +34,83 @@ h2 {
 ul {
     padding: 88px 24px 0 24px;
 }
+
 li {
     display: inline-block;
     margin: 20px;
 }
 
+#banner {
+    width: 100%;
+    height: 104px;
+    background-color: #587e76;
+}
+.about-me {
+    display: flex;
+    padding: 30px 12px 30px 12px;
+    /* border: 2px solid #bd5734; */
+    text-align: start;
+}
+
+.about-me-text {
+    width: 75%;
+    text-align: left;
+    padding-top: 80px;
+}
+
+.about-me h3 {
+    font-size: 3.5em;
+    padding: 20px 0 20px 20px;
+    margin-right: 12px;
+    margin-bottom: 20px;
+    color: #7a3b2e;
+}
+
+.about-me p {
+    color: #7a3b2e;
+    font-size: 1.75em;
+    padding: 20px 120px 0 20px;
+    line-height: 2em;;
+}
+
+.about-me img {
+    width: 25%;
+    height: auto;
+    margin-right: 12px;
+}
+
+.my-work {
+    background-color: #eaece5;
+    color:#7a3b2e;
+    padding: 20px 0 20px 20px;
+}
+
+.my-work h3 {
+    font-size: 3.5em;
+}
+
+.my-work p {
+    font-size: 1.5em;
+}
+/* .border-line {
+    width: 20%;
+    height: 200px;
+    border-right: 8px solid #bd5734;
+    margin-top: 12px;
+    padding: 8px;
+    text-align: center;
+    border-radius: 30px;
+} */
 @media screen and (max-width: 933px) {
-    header {
+    header,
+    .about-me {
         flex-direction: column;
         display: block;
     }
 
     .header-name,
-    .my-links {
+    .my-links,
+    .about-me {
         width: 100%;
         text-align: center;
         font-size: 85%;
@@ -54,6 +118,7 @@ li {
 
     ul {
         padding-top: 0px;
+        padding-bottom: 4px;
     }
 
     li {
