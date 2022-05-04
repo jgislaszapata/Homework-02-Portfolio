@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: #bbab9b;
+    background-color: #9fa9a3;
 }
 
 .header-name {
@@ -12,7 +12,7 @@ body {
 
 header {
     display: flex;
-    background-color: #7a3b2e;
+    background-color: #454140;
     color: #eaece5;
 }
 
@@ -31,6 +31,11 @@ h2 {
     text-align: right;
 }
 
+a, a:hover, a:visited, a:active {
+    color: inherit;
+    text-decoration: none;
+   }
+
 ul {
     padding: 88px 24px 0 24px;
 }
@@ -40,20 +45,21 @@ li {
     margin: 20px;
 }
 
-#banner {
+.banner {
     width: 100%;
-    height: 164px;
-    background-color: #587e76;
+    height: 14px;
+    background-color: black;
 }
 .about-me {
     display: flex;
     padding: 30px 12px 30px 12px;
     /* border: 2px solid #bd5734; */
     text-align: start;
+    color: #454140;
 }
 
 .about-me-text {
-    width: 75%;
+    width: 60%;
     text-align: left;
     padding-top: 80px;
 }
@@ -63,28 +69,31 @@ li {
     padding: 20px 0 20px 40px;
     margin-right: 12px;
     margin-bottom: 20px;
-    color: #7a3b2e;
 }
 
 .about-me p {
-    color: #7a3b2e;
     font-size: 1.75em;
     padding: 20px 120px 0 40px;
     line-height: 2em;;
 }
 
 .about-me img {
-    width: 25%;
+    width: 40%;
     height: auto;
     margin-right: 12px;
 }
 
 .my-work {
-    background-color: #eaece5;
-    color:#7a3b2e;
+    display: flex;
+    background-color:#454140;
+    color: #eaece5;
     padding: 20px 0 20px 20px;
 }
-
+.my-work-text {
+    margin-left: 20px;
+    width: 25%;
+    padding-top: 120px;
+}
 .my-work h3 {
     font-size: 3.5em;
     padding-bottom: 6px;
@@ -106,6 +115,7 @@ li {
 .my-work img {
     width: 500px;
     height: auto;
+    float: right;
 }
 /* .border-line {
     width: 20%;
@@ -117,15 +127,13 @@ li {
     border-radius: 30px;
 } */
 @media screen and (max-width: 933px) {
-    header,
-    .about-me {
+    header {
         flex-direction: column;
         display: block;
     }
 
     .header-name,
-    .my-links,
-    .about-me {
+    .my-links {
         width: 100%;
         text-align: center;
         font-size: 85%;
@@ -138,6 +146,36 @@ li {
 
     li {
         margin: 4px;
+    }
+}
+
+@media screen and (max-width: 1180px) {
+    .about-me {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .about-me-text {
+        width: 100%;
+        padding: 8px;
+        text-align: center;
+    }
+
+    .about-me p {
+        width: 100%;
+        font-size: 24px;
+        margin: 0 auto;
+        padding: 14px;
+        line-height: normal;
+    }
+
+    .about-me h3 {
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    .about-me img {
+        margin: 0 auto;
     }
 }
 
