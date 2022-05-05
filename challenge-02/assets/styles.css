@@ -3,7 +3,12 @@
 }
 
 body {
-    background-color: #9fa9a3;
+    background-color: var(--color-alt);
+}
+
+:root {
+    --color-main: #eaece5;
+    --color-alt: #667292;
 }
 
 .header-name {
@@ -13,7 +18,7 @@ body {
 header {
     display: flex;
     background-color: #454140;
-    color: #eaece5;
+    color: var(--color-main);
 }
 
 h1 {
@@ -55,7 +60,7 @@ li {
     padding: 30px 12px 30px 12px;
     /* border: 2px solid #bd5734; */
     text-align: start;
-    color: #454140;
+    color: var(--color-main);
 }
 
 .about-me-text {
@@ -86,13 +91,16 @@ li {
 .my-work {
     display: flex;
     background-color:#454140;
-    color: #eaece5;
-    padding: 20px 0 20px 20px;
+    color: var(--color-main);
+    padding: 20px 20px 20px 20px;
+    width: 100%;
 }
 .my-work-text {
-    margin-left: 20px;
+    /* margin-left: 20px; */
     width: 25%;
     padding-top: 120px;
+    border-right: 4px solid var(--color-main);
+    margin-right: 32px;
 }
 .my-work h3 {
     font-size: 3.5em;
@@ -100,32 +108,33 @@ li {
 }
 
 .my-work h4 {
-    font-size: 1.5em;
+    font-size: 1em;
     margin-bottom: 60px;
 }
 .my-work .project-1 {
     width: 50%;
+    margin-right: 32px;
 }
 .my-work p {
-    text-align: left;
-    font-size: 1.25em;
-    margin-bottom: 8px;
+    text-align: center;
+    font-size: 1.5em;
+    padding-bottom: 16px;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .my-work img {
-    width: 500px;
+    width: 100%;
     height: auto;
-    float: right;
+    margin: 0 auto;
 }
-/* .border-line {
-    width: 20%;
-    height: 200px;
-    border-right: 8px solid #bd5734;
-    margin-top: 12px;
-    padding: 8px;
-    text-align: center;
-    border-radius: 30px;
-} */
+
+.project-2-3 {
+    justify-content: center;
+    width: 25%;
+    height: auto;
+}
+
 @media screen and (max-width: 933px) {
     header {
         flex-direction: column;
@@ -178,24 +187,3 @@ li {
         margin: 0 auto;
     }
 }
-
-/* @media screen and (max-width: 933px) {
-    .header-name,
-    .my-links {
-        width: 100%;
-        text-align: center;
-        font-size: 85%;
-    }
-} */
-
-/* @media screen and (max-width: 933px) {
-    ul {
-        padding-top: 8px;
-    }
-}
-
-@media screen and (max-width: 933px) {
-    li {
-        margin: 4px;
-    }
-} */
