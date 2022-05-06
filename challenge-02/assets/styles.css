@@ -140,6 +140,22 @@ li {
     margin-top: 20%;
 }
 
+
+.contact {
+    color: var(--color-main);
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.contact h3 {
+    font-size: 2.5em;
+}
+
+.contact ul {
+    padding-top: 20px;
+}
+
 @media screen and (max-width: 933px) {
     header {
         flex-direction: column;
@@ -163,14 +179,6 @@ li {
     }
 }
 
-.contact {
-    color: var(--color-main);
-    padding: 20px;
-}
-
-.contact h3 {
-    font-size: 2.5em;
-}
 
 @media screen and (max-width: 1180px) {
     .about-me {
@@ -217,7 +225,7 @@ li {
     }
 
     .my-work .project-1 {
-        width: 100;
+        width: 100%;
         padding: 20px;
         margin: auto;
     }
